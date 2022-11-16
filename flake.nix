@@ -7,6 +7,10 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nix.url = "github:nixos/nix";
     utils.url = "github:kreisys/flake-utils";
+    flake-compat = {
+      url = "github:edolstra/flake-compat";
+      flake = false;
+    };
   };
 
   outputs = { self, nixpkgs, utils, devshell, nix, ... }@inputs:
